@@ -3,6 +3,14 @@ enum ActionKind {
     Idle,
     Jumping
 }
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    characterAnimations.loopFrames(
+    mySprite,
+    assets.animation`myAnim`,
+    200,
+    characterAnimations.rule(Predicate.MovingUp)
+    )
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -68,5 +76,11 @@ forever(function () {
     assets.animation`Right idle`,
     100,
     characterAnimations.rule(Predicate.HittingWallRight)
+    )
+    characterAnimations.loopFrames(
+    mySprite,
+    assets.animation`myAnim0`,
+    200,
+    characterAnimations.rule(Predicate.MovingUp)
     )
 })
