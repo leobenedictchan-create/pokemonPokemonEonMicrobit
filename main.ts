@@ -36,11 +36,14 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 let mySprite: Sprite = null
+let Secret_garden = tilemap`Secret garden`
+let Fountain_square = tilemap`Fountain square`
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
 mySprite.setPosition(80, 60)
 controller.moveSprite(mySprite, 50, 50)
-tiles.setCurrentTilemap(tilemap`level1`)
+tiles.setCurrentTilemap(tilemap`Secret garden`)
 scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+tileUtil.connectMaps(Secret_garden, Fountain_square, MapConnectionKind.Door1)
 forever(function () {
     characterAnimations.loopFrames(
     mySprite,
