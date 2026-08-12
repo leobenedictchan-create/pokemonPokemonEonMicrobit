@@ -221,6 +221,25 @@ namespace myImages {
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `];
+            case "Left idle":
+            case "anim3":return [img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . . f 2 f 8 8 8 8 f f . . . 
+. . . f 8 8 2 f 8 8 8 8 f f . . 
+. . . f 8 8 8 2 f f 8 8 8 f . . 
+. . f 2 2 2 2 2 8 8 f f f f . . 
+. . f 8 8 f f f f 8 8 8 8 f . . 
+. . f f f e e e f f f f f f f . 
+. . f e e d d f 1 e d d e f f . 
+. . . f e d d f 1 d 4 d e e f . 
+. . . . f d d d e e e e e f . . 
+. . . . f 8 2 2 d d 2 f . . . . 
+. . . . f 2 8 2 d 4 2 f . . . . 
+. . . f f 8 8 2 2 2 f f f . . . 
+. . . f f f f f f f f f f . . . 
+. . . . f f f . . . f f . . . . 
+`];
             case "Walking left":
             case "anim2":return [img`
 . . . . . . . . . . . . . . . . 
@@ -291,24 +310,94 @@ namespace myImages {
 . . . f f f f f f f f f f . . . 
 . . . . f f f . . . f f . . . . 
 `];
-            case "Left idle":
-            case "anim3":return [img`
+            case "Walking Right":
+            case "anim4":return [img`
 . . . . . . . . . . . . . . . . 
 . . . . . f f f f f f . . . . . 
-. . . . f 2 f 8 8 8 8 f f . . . 
-. . . f 8 8 2 f 8 8 8 8 f f . . 
-. . . f 8 8 8 2 f f 8 8 8 f . . 
-. . f 2 2 2 2 2 8 8 f f f f . . 
-. . f 8 8 f f f f 8 8 8 8 f . . 
-. . f f f e e e f f f f f f f . 
-. . f e e d d f 1 e d d e f f . 
-. . . f e d d f 1 d 4 d e e f . 
-. . . . f d d d e e e e e f . . 
-. . . . f 8 2 2 d d 2 f . . . . 
-. . . . f 2 8 2 d 4 2 f . . . . 
-. . . f f 8 8 2 2 2 f f f . . . 
+. . . f f 8 8 8 8 f 2 f . . . . 
+. . f f 8 8 8 8 f 2 8 8 f . . . 
+. . f 8 8 8 f f 2 8 8 8 f . . . 
+. . f f f f 8 8 2 2 2 2 2 f . . 
+. . f 8 8 8 8 f f f f 8 8 f . . 
+. f f f f f f f e e e f f f . . 
+. f f e d d e 1 f d d e e f . . 
+. f e e d 4 d 1 f d d e f . . . 
+. . f e e e e e d d d f . . . . 
+. . . . f 2 d d 2 2 8 f . . . . 
+. . . . f 2 4 d 2 8 2 f f . . . 
+. . . f f f 2 2 2 8 8 2 f . . . 
+. . . f f f f f f f f 2 f f . . 
+. . . . f f . . . . f f f f . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . f f 8 8 8 8 f 2 f . . . . 
+. . f f 8 8 8 8 f 2 8 8 f . . . 
+. . f 8 8 8 f f 2 8 8 8 f . . . 
+. . f f f f 8 8 2 2 2 2 2 f . . 
+. . f 8 8 8 8 f f f f 8 8 f . . 
+. f f f f f f f e e e f f f . . 
+. f f e d d e 1 f d d e e f . . 
+. f e e d 4 d 1 f d d e f . . . 
+. . f e e e e e d d d f . . . . 
+. . . . f 2 d d 2 2 8 f . . . . 
+. . . . f 2 4 d 2 8 2 f . . . . 
+. . . f f f 2 2 2 8 8 f f . . . 
 . . . f f f f f f f f f f . . . 
-. . . . f f f . . . f f . . . . 
+. . . . f f . . . f f f . . . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f f f . . . . 
+. . . . f f 8 8 8 8 f 2 f . . . 
+. . . f f 8 8 8 8 f 2 8 8 f . . 
+. . . f 8 8 8 f f 2 8 8 8 f . . 
+. . . f f f f 8 8 2 2 2 2 2 f . 
+. . . f 8 8 8 8 f f f f 8 8 f . 
+. . f f f f f f f e e e f f f . 
+. . f f e d d e 1 f d d e e f . 
+. . f e e d 4 d 1 f d d e f . . 
+. . . f e e e e e d d d f . . . 
+. . . . . f 2 d d 2 2 8 f . . . 
+. . . . f f 2 4 d 2 8 2 f . . . 
+. . . f f 2 2 2 2 2 8 8 f f . . 
+. . . f f f f f f f f f f f . . 
+. . . . f f f . . . f f f . . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . f f 8 8 8 8 f 2 f . . . . 
+. . f f 8 8 8 8 f 2 8 8 f . . . 
+. . f 8 8 8 f f 2 8 8 8 f . . . 
+. . f f f f 8 8 2 2 2 2 2 f . . 
+. . f 8 8 8 8 f f f f 8 8 f . . 
+. f f f f f f f e e e f f f . . 
+. f f e d d e 1 f d d e e f . . 
+. f e e d 4 d 1 f d d e f . . . 
+. . f e e e e e d d d f . . . . 
+. . . . f 2 d d 2 2 8 f . . . . 
+. . . . f 2 4 d 2 8 2 f . . . . 
+. . . f f f 2 2 2 8 8 f f . . . 
+. . . f f f f f f f f f f . . . 
+. . . . f f . . . f f f . . . . 
+`];
+            case "Right idle":
+            case "anim5":return [img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . f f 8 8 8 8 f 2 f . . . . 
+. . f f 8 8 8 8 f 2 8 8 f . . . 
+. . f 8 8 8 f f 2 8 8 8 f . . . 
+. . f f f f 8 8 2 2 2 2 2 f . . 
+. . f 8 8 8 8 f f f f 8 8 f . . 
+. f f f f f f f e e e f f f . . 
+. f f e d d e 1 f d d e e f . . 
+. f e e d 4 d 1 f d d e f . . . 
+. . f e e e e e d d d f . . . . 
+. . . . f 2 d d 2 2 8 f . . . . 
+. . . . f 2 4 d 2 8 2 f . . . . 
+. . . f f f 2 2 2 8 8 f f . . . 
+. . . f f f f f f f f f f . . . 
+. . . . f f . . . f f f . . . . 
 `];
         }
         return null;
