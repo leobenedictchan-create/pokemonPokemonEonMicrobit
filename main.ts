@@ -14,9 +14,9 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
-    assets.animation`Walking left`,
+    assets.animation`Walking Right`,
     200,
-    characterAnimations.rule(Predicate.MovingDown)
+    characterAnimations.rule(Predicate.MovingRight)
     )
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -62,5 +62,11 @@ forever(function () {
     assets.animation`Left idle`,
     100,
     characterAnimations.rule(Predicate.HittingWallLeft)
+    )
+    characterAnimations.loopFrames(
+    mySprite,
+    assets.animation`Right idle`,
+    100,
+    characterAnimations.rule(Predicate.HittingWallRight)
     )
 })
