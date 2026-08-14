@@ -178,6 +178,9 @@ tileUtil.connectMaps(Secret_garden, Fountain_square, MapConnectionKind.Door1)
 let tilemap1 = tilemap`Secret garden`
 let tilemap2 = tilemap`Fountain square`
 forever(function () {
+    scene.cameraFollowSprite(mySprite)
+})
+forever(function () {
     characterAnimations.loopFrames(
     mySprite,
     [img`
