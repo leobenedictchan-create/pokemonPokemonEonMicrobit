@@ -170,25 +170,6 @@ namespace myImages {
 
     helpers._registerFactory("animation", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "myAnim0":
-            case "anim7":return [img`
-. . . . . . f f f f . . . . . . 
-. . . . f f 8 8 8 8 f f . . . . 
-. . . f 8 8 8 8 8 8 8 8 f . . . 
-. . f 8 8 8 8 8 8 8 8 8 8 f . . 
-. . f 8 8 8 8 8 8 8 8 8 8 f . . 
-. . f f f f f f f f f f f f . . 
-. . f e e e e e e e e e e f . . 
-. f f e e e e e e e e e e f f . 
-. f e e e e e e e e e e e e f . 
-. . f e e e e e e e e e e f . . 
-. . . f e e e e e e e e f . . . 
-. . . d f f f f f f f f d . . . 
-. . d 4 f 2 2 2 2 2 2 f 4 d . . 
-. . d d f 2 2 2 2 2 2 f d d . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
-`];
             case "-":
             case "anim1":return [img`
 . . . . . . f f f f . . . . . . 
@@ -489,6 +470,25 @@ namespace myImages {
 . . . c f 2 8 2 2 8 2 f c . . . 
 . . c 4 f 8 2 2 2 2 8 f 4 c . . 
 . . c c f 8 8 8 8 8 8 f c c . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`];
+            case "myAnim0":
+            case "anim7":return [img`
+. . . . . . f f f f . . . . . . 
+. . . . f f 8 8 8 8 f f . . . . 
+. . . f 8 8 8 8 8 8 8 8 f . . . 
+. . f 8 8 8 8 8 8 8 8 8 8 f . . 
+. . f 8 8 8 8 8 8 8 8 8 8 f . . 
+. . f f f f f f f f f f f f . . 
+. . f e e e e e e e e e e f . . 
+. f f e e e e e e e e e e f f . 
+. f e e e e e e e e e e e e f . 
+. . f e e e e e e e e e e f . . 
+. . . f e e e e e e e e f . . . 
+. . . c f f f f f f f f c . . . 
+. . c 4 f 2 2 2 2 2 2 f 4 c . . 
+. . c c f 2 2 2 2 2 2 f c c . . 
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `];

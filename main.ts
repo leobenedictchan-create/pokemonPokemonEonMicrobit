@@ -6,6 +6,11 @@ enum ActionKind {
 namespace SpriteKind {
     export const Tile = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
+    tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+    mySprite.setPosition(145, 3)
+    tiles.placeOnRandomTile(mySprite, assets.tile`Plain_grass`)
+})
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -41,6 +46,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     mySprite.setPosition(145, 3)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile20`)
 })
 let mySprite: Sprite = null
 scene.setBackgroundImage(assets.image`Title screen`)
@@ -168,15 +174,15 @@ scene.setBackgroundImage(img`
     ................................................................................................................................................................
     `)
 let Secret_garden = tilemap`Secret garden`
-let Fountain_square = tilemap`Fountain square`
+let Hidden_entrance = tilemap`Hidden entrance`
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
 mySprite.setPosition(80, 60)
 controller.moveSprite(mySprite, 50, 50)
 tiles.setCurrentTilemap(Secret_garden)
 scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
-tileUtil.connectMaps(Secret_garden, Fountain_square, MapConnectionKind.Door1)
+tileUtil.connectMaps(Secret_garden, Hidden_entrance, MapConnectionKind.Door1)
 let tilemap1 = tilemap`Secret garden`
-let tilemap2 = tilemap`Fountain square`
+let tilemap2 = tilemap`Hidden entrance`
 forever(function () {
     scene.cameraFollowSprite(mySprite)
 })
@@ -203,6 +209,6 @@ forever(function () {
     mySprite,
     assets.animation`myAnim0`,
     200,
-    characterAnimations.rule(Predicate.MovingUp)
+    characterAnimations.rule(Predicate.HittingWallUp)
     )
 })
