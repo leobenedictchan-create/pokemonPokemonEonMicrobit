@@ -183,24 +183,7 @@ forever(function () {
 forever(function () {
     characterAnimations.loopFrames(
     mySprite,
-    [img`
-        . . . . . . f f f f . . . . . . 
-        . . . . f f f 2 2 f f f . . . . 
-        . . . f f f 2 8 8 2 f f f . . . 
-        . . f f f 2 8 8 8 8 2 f f f . . 
-        . . f f 8 2 2 2 2 2 2 8 f f . . 
-        . . f 8 8 f f f f f f 8 8 f . . 
-        . . f f f f e e e e f f f f . . 
-        . f f e d 1 f d d f 1 d e f f . 
-        . f e e d 1 f d d f 1 d e e f . 
-        . . f e e d d d d d d e e f . . 
-        . . . f e e 2 8 8 2 e e f . . . 
-        . . . d f 2 8 2 2 8 2 f d . . . 
-        . . d 4 f 8 2 2 2 2 8 f 4 d . . 
-        . . d d f 8 8 8 8 8 8 f d d . . 
-        . . . . . f f f f f f . . . . . 
-        . . . . . f f . . f f . . . . . 
-        `],
+    assets.animation`idle`,
     100,
     characterAnimations.rule(Predicate.NotMoving, Predicate.HittingWallDown)
     )

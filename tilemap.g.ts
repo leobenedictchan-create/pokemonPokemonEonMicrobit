@@ -7,8 +7,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile1 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile3 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile4 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile5 = image.ofBuffer(hex``);
@@ -37,16 +35,36 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile12 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile20 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile17 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile18 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile19 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile3 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile17 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile20 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
+            case "Secret garden":
+            case "level1":return tiles.createTilemap(hex`1e000f00020202020202020202020202020202020202020202020202020202020202020101010101010101010108090909090909090b010101010101010101020201010101010101010101070a0a0a0a0a0a0a0c010106010101010101020201010101010101010101010101010101010101010101010101010101020201010101010101010101010101010101010101010101010101010101020201010101010101010101010102020202020201010101010101010101020201010101010101010101010102030303050201010101060101010101020201010101010101010101010102030403030201010101010101010101020201010101010101010101010102030305040201010101010d0e010101020201010101010101010101010102030403030201010101010f100101010202010101010101010101010101020303050302010101010101010101010202010101010101010101010101020202020202010101010101010101010202010101010101010101010101010101010101010101010101010101010202010101010101010101010101010101060101010101010101010101010202020202020202020202020202020202020202080b020202020202111102`, img`
+...........2222222222222222222
+...........222222222.........2
+...........222222222..2......2
+.............................2
+.............................2
+.............222222..........2
+.............222222....2.....2
+.............222222..........2
+.............222222.....22...2
+.............222222.....22...2
+.............222222..........2
+.............222222..........2
+.............................2
+................2............2
+...........2222222222222222..2
+`, [myTiles.transparency8,myTiles.tile1,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile2,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17], TileScale.Eight);
             case "Fountain square":
             case "level2":return tiles.createTilemap(hex`1000100001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010103030301010101010101010101010103020202030101010101010101010101030202020301010101010101010101010103030301010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
 . . . . . . . . . . . . . . . . 
@@ -66,24 +84,6 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile20,myTiles.tile18,myTiles.tile19], TileScale.Sixteen);
-            case "Secret garden":
-            case "level1":return tiles.createTilemap(hex`1e000f00020202020202020202020202020202020202020202020202020202020202020101010101010101010108090909090909090b010101010101010101020201010101010101010101070a0a0a0a0a0a0a0c010106010101010101020201010101010101010101010101010101010101010101010101010101020201010101010101010101010101010101010101010101010101010101020201010101010101010101010102020202020201010101010101010101020201010101010101010101010102030303050201010101060101010101020201010101010101010101010102030403030201010101010101010101020201010101010101010101010102030305040201010101010d0e010101020201010101010101010101010102030403030201010101010f100101010202010101010101010101010101020303050302010101010101010101010202010101010101010101010101020202020202010101010101010101010202010101010101010101010101010101010101010101010101010101010202010101010101010101010101010101060101010101010101010101010202020202020202020202020202020202020202080b020202020202111102`, img`
-...........2222222222222222222
-...........222222222.........2
-...........222222222..2......2
-.............................2
-.............................2
-.............222222..........2
-.............222222....2.....2
-.............222222..........2
-.............222222.....22...2
-.............222222.....22...2
-.............222222..........2
-.............222222..........2
-.............................2
-................2............2
-...........2222222222222222..2
-`, [myTiles.transparency8,myTiles.tile1,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile2,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17], TileScale.Eight);
         }
         return null;
     })
@@ -94,8 +94,6 @@ namespace myTiles {
             case "transparency8":return transparency8;
             case "Plain_grass":
             case "tile1":return tile1;
-            case "myTile1":
-            case "tile3":return tile3;
             case "myTile2":
             case "tile4":return tile4;
             case "myTile3":
@@ -124,14 +122,16 @@ namespace myTiles {
             case "tile13":return tile13;
             case "myTile9":
             case "tile12":return tile12;
-            case "myTile17":
-            case "tile20":return tile20;
-            case "myTile14":
-            case "tile17":return tile17;
             case "myTile15":
             case "tile18":return tile18;
             case "myTile16":
             case "tile19":return tile19;
+            case "myTile1":
+            case "tile3":return tile3;
+            case "myTile14":
+            case "tile17":return tile17;
+            case "myTile17":
+            case "tile20":return tile20;
         }
         return null;
     })
