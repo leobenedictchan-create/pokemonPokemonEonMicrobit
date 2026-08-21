@@ -90,13 +90,6 @@
         "data": "YzgwMDEwMDAxMDAwMDEwMDAwMDAwMGZmZmYwMDAwMDAwMDAwZmY4ODg4ZmYwMDAwMDBmMDg4ODg4ODg4MGYwMDAwOGY4ODg4ODg4OGY4MDAwMDhmODg4ODg4ODhmODAwMDBmZmZmZmZmZmZmZmYwMDAwZWZlZWVlZWVlZWZlMDBmMGVmZWVlZWVlZWVmZTBmZjBlZWVlZWVlZWVlZWUwZjAwZWZlZWVlZWVlZWZlMDAwMGYwZWVlZWVlZWUwZjAwMDBjMGZmZmZmZmZmMGMwMDAwNGMyZjIyMjJmMmM0MDAwMGNjMmYyMjIyZjJjYzAwMDAwMGYwZmZmZjBmMDAwMDAwMDBmMDBmZjAwZjAwMDA=",
         "displayName": "myAnim0"
     },
-    "anim9": {
-        "namespace": "myAnimations",
-        "id": "anim9",
-        "mimeType": "application/mkcd-animation",
-        "data": "YzgwMDEwMDAxMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA=",
-        "displayName": "myAnim1"
-    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
