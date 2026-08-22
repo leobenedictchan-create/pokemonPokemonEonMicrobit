@@ -43,7 +43,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingDown)
     )
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     mySprite.setPosition(145, 3)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile20`)
@@ -173,15 +173,15 @@ scene.setBackgroundImage(img`
     ................................................................................................................................................................
     ................................................................................................................................................................
     `)
-let Secret_garden = tilemap`Secret garden`
+let Secret_garden = tilemap`Secret garden0`
 let Hidden_entrance = tilemap`Hidden entrance`
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
-mySprite.setPosition(80, 60)
+tiles.placeOnRandomTile(mySprite, assets.tile`myTile32`)
 controller.moveSprite(mySprite, 50, 50)
 tiles.setCurrentTilemap(Secret_garden)
 scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
 tileUtil.connectMaps(Secret_garden, Hidden_entrance, MapConnectionKind.Door1)
-let tilemap1 = tilemap`Secret garden`
+let tilemap1 = tilemap`Secret garden0`
 let tilemap2 = tilemap`Hidden entrance`
 forever(function () {
     scene.cameraFollowSprite(mySprite)
