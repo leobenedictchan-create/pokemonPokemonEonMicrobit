@@ -24,15 +24,15 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage2"
     },
-    "image6": {
-        "data": "hwQQABAAAAAgAAAAAAAAAC7iAAAAAAAAAC4CAAAA7gAAICIOLi4iDgAe4i4SHuIOAO4RIhLhLg4A4CFSHxGCAADgEiEiEYgAAOASISIRiAAA4CFSHxGCAADuESIS4S4OAB7iLhIe4g4AICIOLi4iDgAuAgAAAO4ALuIAAAAAAAAgDgAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage3"
-    },
     "image7": {
         "data": "hwQQABAAAACQAAAAAAAAAJiJAAAAAAAAAJgJAAAAiAAAkJkImJiZCAAYiZgZGIkIAIgRmRmBmAgAgJEpHxEpAACAGZGZESIAAIAZkZkRIgAAgJEpHxEpAACIEZkZgZgIABiJmBkYiQgAkJkImJiZCACYCQAAAIgAmIkAAAAAAACQCAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage4"
+    },
+    "image6": {
+        "data": "hwQQABAAAAAgAAAAAAAAAC7iAAAAAAAAAC4CAAAA7gAAICIOLi4iDgAe4i4SHuIOAO4RIhLhLg4A4CFSHxGCAADgEiEiEYgAAOASISIRiAAA4CFSHxGCAADuESIS4S4OAB7iLhIe4g4AICIOLi4iDgAuAgAAAO4ALuIAAAAAAAAgDgAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage3"
     },
     "anim1": {
         "namespace": "myAnimations",

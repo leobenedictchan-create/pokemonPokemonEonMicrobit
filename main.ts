@@ -8,8 +8,7 @@ namespace SpriteKind {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    mySprite.setPosition(145, 3)
-    tiles.placeOnRandomTile(mySprite, assets.tile`Plain_grass`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile16`)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
@@ -18,9 +17,6 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     200,
     characterAnimations.rule(Predicate.MovingUp)
     )
-})
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-	
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
@@ -179,7 +175,6 @@ scene.setBackgroundImage(img`
 let Secret_garden = tilemap`Secret garden0`
 let Hidden_entrance = tilemap`Hidden entrance`
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
-tiles.placeOnRandomTile(mySprite, assets.tile`myTile32`)
 controller.moveSprite(mySprite, 50, 50)
 tiles.setCurrentTilemap(Secret_garden)
 scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
