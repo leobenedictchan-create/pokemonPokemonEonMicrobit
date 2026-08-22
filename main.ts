@@ -19,6 +19,9 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingUp)
     )
 })
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -183,6 +186,7 @@ scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle
 tileUtil.connectMaps(Secret_garden, Hidden_entrance, MapConnectionKind.Door1)
 let tilemap1 = tilemap`Secret garden0`
 let tilemap2 = tilemap`Hidden entrance`
+tiles.placeOnRandomTile(mySprite, assets.tile`myTile32`)
 forever(function () {
     scene.cameraFollowSprite(mySprite)
 })
