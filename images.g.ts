@@ -145,25 +145,6 @@ namespace myImages {
 . . . . . 8 8 8 8 8 8 . . . . . 
 . . . . . f f . . f f . . . . . 
 `;
-            case "image3":
-            case "myImage0":return img`
-. . . . . f f f f f f . . . . . 
-. . f f f 9 9 9 9 9 9 f f f . . 
-. f 9 9 8 8 8 8 8 8 8 8 9 9 f . 
-. f 9 1 1 8 8 8 8 8 8 8 8 9 f . 
-. f 8 1 1 8 8 8 8 8 8 8 8 9 f . 
-f 9 8 8 8 8 8 b b 8 8 8 8 8 9 f 
-f 9 8 8 8 b b b 3 8 b b b 8 9 f 
-f 8 8 b b b 3 3 3 b 3 3 b b 9 f 
-f 8 8 b b 3 a 3 b 8 b a 3 b 8 f 
-f 8 8 b 3 a 3 b 8 b 3 a a b b f 
-f 8 b b 3 a a 3 b 3 3 a a 3 b f 
-. f b 3 a a a a 3 a a a a 3 f . 
-. f 3 3 a a a a a a a a 3 8 f . 
-. f 8 8 8 3 3 3 3 3 8 8 8 8 f . 
-. . f f f 8 8 8 8 8 8 f f f . . 
-. . . . . f f f f f f . . . . . 
-`;
             case "image4":
             case "myImage1":return img`
 ................................
@@ -290,6 +271,25 @@ e222e.....e..........e.....e222e
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
+`;
+            case "image3":
+            case "Soul Dew":return img`
+. . . . . f f f f f f . . . . . 
+. . f f f 9 9 9 9 9 9 f f f . . 
+. f 9 9 8 8 8 8 8 8 8 8 9 9 f . 
+. f 9 1 1 8 8 8 8 8 8 8 8 9 f . 
+. f 8 1 1 8 8 8 8 8 8 8 8 9 f . 
+f 9 8 8 8 8 8 b b 8 8 8 8 8 9 f 
+f 9 8 8 8 b b b 3 8 b b b 8 9 f 
+f 8 8 b b b 3 3 3 b 3 3 b b 9 f 
+f 8 8 b b 3 a 3 b 8 b a 3 b 8 f 
+f 8 8 b 3 a 3 b 8 b 3 a a b b f 
+f 8 b b 3 a a 3 b 3 3 a a 3 b f 
+. f b 3 a a a a 3 a a a a 3 f . 
+. f 3 3 a a a a a a a a 3 8 f . 
+. f 8 8 8 3 3 3 3 3 8 8 8 8 f . 
+. . f f f 8 8 8 8 8 8 f f f . . 
+. . . . . f f f f f f . . . . . 
 `;
         }
         return null;
