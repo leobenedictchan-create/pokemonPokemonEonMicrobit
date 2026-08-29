@@ -9,6 +9,8 @@ namespace SpriteKind {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile16`)
+    latias = sprites.create(assets.image`myImage3`, SpriteKind.Player)
+    tiles.placeOnRandomTile(latias, sprites.castle.tileGrass2)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
@@ -46,8 +48,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, 
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     player_1_fell_off_a_ladder.setPosition(145, 3)
     tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile20`)
+    sprites.destroy(latias)
 })
 let player_1_fell_off_a_ladder: Sprite = null
+let latias: Sprite = null
 scene.setBackgroundImage(assets.image`Title screen`)
 pauseUntil(() => controller.A.isPressed())
 scene.setBackgroundImage(img`
@@ -174,6 +178,7 @@ scene.setBackgroundImage(img`
     `)
 let Secret_garden = tilemap`Secret garden0`
 let Hidden_entrance = tilemap`Hidden entrance`
+latias = sprites.create(assets.image`myImage3`, SpriteKind.Player)
 player_1_fell_off_a_ladder = sprites.create(assets.image`myImage`, SpriteKind.Player)
 controller.moveSprite(player_1_fell_off_a_ladder, 50, 50)
 tiles.setCurrentTilemap(Secret_garden)
@@ -182,6 +187,7 @@ tileUtil.connectMaps(Secret_garden, Hidden_entrance, MapConnectionKind.Door1)
 let tilemap1 = tilemap`Secret garden0`
 let tilemap2 = tilemap`Hidden entrance`
 tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile32`)
+tiles.placeOnRandomTile(latias, sprites.castle.tileGrass2)
 forever(function () {
     scene.cameraFollowSprite(player_1_fell_off_a_ladder)
 })
