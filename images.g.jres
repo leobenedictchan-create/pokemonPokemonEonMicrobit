@@ -29,15 +29,15 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Title screen"
     },
-    "image1": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAAD///4AzAAA8Ijv7s/EAACPiP/s/v8A8CiCH8Eugvj/gvL+zywo+C+I8s7MjCIIL4jyzsyMIgj/gvL+zywo+PAogh/BLoL4AI+I/+z+/wAA8Ijv7s/EAAAA///+AMwAAAAA8A8AAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage"
-    },
     "image6": {
         "data": "hwQQABAAAAAgAAAAAAAAAC7iAAAAAAAAAC4CAAAA7gAAICIOLi4iDgAe4i4SHuIOAO4RIhLhLg4A4CFSHxGCAADgEiEiEYgAAOASISIRiAAA4CFSHxGCAADuESIS4S4OAB7iLhIe4g4AICIOLi4iDgAuAgAAAO4ALuIAAAAAAAAgDgAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage3"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAAD///4AzAAA8Ijv7s/EAACPiP/s/v8A8CiCH8Eugvj/gvL+zywo+C+I8s7MjCIIL4jyzsyMIgj/gvL+zywo+PAogh/BLoL4AI+I/+z+/wAA8Ijv7s/EAAAA///+AMwAAAAA8A8AAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
     },
     "anim8": {
         "namespace": "myAnimations",

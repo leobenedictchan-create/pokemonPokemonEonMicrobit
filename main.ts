@@ -6,6 +6,16 @@ enum ActionKind {
 namespace SpriteKind {
     export const Tile = SpriteKind.create()
 }
+/**
+ * oi, stop snooping
+ */
+/**
+ * stop it.
+ */
+/**
+ * #Nerdishwariors4eva
+ */
+// I mean it
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile16`)
@@ -43,6 +53,21 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     200,
     characterAnimations.rule(Predicate.MovingDown)
     )
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    if (player_1_fell_off_a_ladder.overlapsWith(latias)) {
+        pauseUntil(() => controller.A.isPressed())
+        game.showLongText("Latias: I'm Steve Chicken jockey", DialogLayout.Bottom)
+        player_1_fell_off_a_ladder.vx += -20
+        player_1_fell_off_a_ladder.vy += 20
+        pauseUntil(() => !(player_1_fell_off_a_ladder.overlapsWith(latias)))
+        player_1_fell_off_a_ladder.vx = 0
+        player_1_fell_off_a_ladder.vy = 0
+        controller.moveSprite(player_1_fell_off_a_ladder, 50, 50)
+    }
+})
+controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.splash("Menu in Progress")
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
