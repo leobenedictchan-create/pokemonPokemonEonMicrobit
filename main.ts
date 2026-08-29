@@ -8,11 +8,11 @@ namespace SpriteKind {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile16`)
+    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile16`)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`myAnim`,
     200,
     characterAnimations.rule(Predicate.MovingUp)
@@ -20,7 +20,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`Walking left`,
     200,
     characterAnimations.rule(Predicate.MovingLeft)
@@ -28,7 +28,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`Walking Right`,
     200,
     characterAnimations.rule(Predicate.MovingRight)
@@ -36,7 +36,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`-`,
     200,
     characterAnimations.rule(Predicate.MovingDown)
@@ -44,10 +44,10 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, location) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    mySprite.setPosition(145, 3)
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile20`)
+    player_1_fell_off_a_ladder.setPosition(145, 3)
+    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile20`)
 })
-let mySprite: Sprite = null
+let player_1_fell_off_a_ladder: Sprite = null
 scene.setBackgroundImage(assets.image`Title screen`)
 pauseUntil(() => controller.A.isPressed())
 scene.setBackgroundImage(img`
@@ -174,38 +174,38 @@ scene.setBackgroundImage(img`
     `)
 let Secret_garden = tilemap`Secret garden0`
 let Hidden_entrance = tilemap`Hidden entrance`
-mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
-controller.moveSprite(mySprite, 50, 50)
+player_1_fell_off_a_ladder = sprites.create(assets.image`myImage`, SpriteKind.Player)
+controller.moveSprite(player_1_fell_off_a_ladder, 50, 50)
 tiles.setCurrentTilemap(Secret_garden)
-scaling.scaleToPixels(mySprite, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+scaling.scaleToPixels(player_1_fell_off_a_ladder, 16, ScaleDirection.Uniformly, ScaleAnchor.Middle)
 tileUtil.connectMaps(Secret_garden, Hidden_entrance, MapConnectionKind.Door1)
 let tilemap1 = tilemap`Secret garden0`
 let tilemap2 = tilemap`Hidden entrance`
-tiles.placeOnRandomTile(mySprite, assets.tile`myTile32`)
+tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile32`)
 forever(function () {
-    scene.cameraFollowSprite(mySprite)
+    scene.cameraFollowSprite(player_1_fell_off_a_ladder)
 })
 forever(function () {
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`idle`,
     100,
     characterAnimations.rule(Predicate.NotMoving, Predicate.HittingWallDown)
     )
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`Left idle`,
     100,
     characterAnimations.rule(Predicate.HittingWallLeft)
     )
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`Right idle`,
     100,
     characterAnimations.rule(Predicate.HittingWallRight)
     )
     characterAnimations.loopFrames(
-    mySprite,
+    player_1_fell_off_a_ladder,
     assets.animation`myAnim0`,
     200,
     characterAnimations.rule(Predicate.HittingWallUp)
