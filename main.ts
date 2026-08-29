@@ -214,6 +214,13 @@ let tilemap2 = tilemap`Hidden entrance`
 tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile32`)
 tiles.placeOnRandomTile(latias, sprites.castle.tileGrass2)
 forever(function () {
+    if (controller.B.isPressed()) {
+        controller.moveSprite(player_1_fell_off_a_ladder, 100, 100)
+    } else if (!(controller.B.isPressed())) {
+        controller.moveSprite(player_1_fell_off_a_ladder, 50, 50)
+    }
+})
+forever(function () {
     scene.cameraFollowSprite(player_1_fell_off_a_ladder)
 })
 forever(function () {
