@@ -57,7 +57,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
     if (player_1_fell_off_a_ladder.overlapsWith(latias)) {
         pauseUntil(() => controller.A.isPressed())
-        game.showLongText("Latias: I'm Steve Chicken jockey", DialogLayout.Bottom)
+        game.showLongText("Latias: Work in progress", DialogLayout.Bottom)
         player_1_fell_off_a_ladder.vx += -20
         player_1_fell_off_a_ladder.vy += 20
         pauseUntil(() => !(player_1_fell_off_a_ladder.overlapsWith(latias)))
