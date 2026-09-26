@@ -7,9 +7,7 @@ namespace SpriteKind {
 /**
  * stop it.
  */
-/**
- * #Nerdishwarriors4eva
- */
+// #Nerdishwarriors4eva
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite2, otherSprite) {
     if (player_1_fell_off_a_ladder.overlapsWith(latias) && controller.A.isPressed()) {
         game.showLongText("Latias: Work in progress", DialogLayout.Bottom)
@@ -26,13 +24,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     tileUtil.loadConnectedMap(MapConnectionKind.Door2)
     tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile20`)
 })
-// I mean it
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
-    tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile16`)
-    latias = sprites.create(assets.image`myImage3`, SpriteKind.Player)
-    tiles.placeOnRandomTile(latias, sprites.castle.tileGrass2)
-})
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     player_1_fell_off_a_ladder,
@@ -41,6 +32,11 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingUp)
     )
 })
+// I mean it
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite4, location3) {
+    tileUtil.loadConnectedMap(MapConnectionKind.Door2)
+    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile2`)
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     player_1_fell_off_a_ladder,
@@ -48,11 +44,6 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     200,
     characterAnimations.rule(Predicate.MovingLeft)
     )
-})
-// I mean it
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
-    tileUtil.loadConnectedMap(MapConnectionKind.Door2)
-    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile2`)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
@@ -70,17 +61,21 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingDown)
     )
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-	
-})
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     game.splash("Menu in Progress")
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite3, location2) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite32, location22) {
     tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     player_1_fell_off_a_ladder.setPosition(145, 3)
     tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile20`)
     sprites.destroy(latias)
+})
+// I mean it
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite3, location2) {
+    tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+    tiles.placeOnRandomTile(player_1_fell_off_a_ladder, assets.tile`myTile16`)
+    latias = sprites.create(assets.image`myImage3`, SpriteKind.Player)
+    tiles.placeOnRandomTile(latias, sprites.castle.tileGrass2)
 })
 let player_1_fell_off_a_ladder: Sprite = null
 let latias: Sprite = null
